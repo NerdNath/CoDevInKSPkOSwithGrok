@@ -1,0 +1,22 @@
+ModuleCargoPart
+LIST of 0 items:
+
+Experiment
+LIST of 2 items:
+[0] = 
+  ["value"] = "<b>materials study</b>: <color=#ffd200>stopped</color>"
+[1] = 
+  ["value"] = "<b>info</b>: <color=#6dcff6><b>0.0</b></color> / <color=#6dcff6><b>27.0</b></color> t-20m 46s"
+KOSNameTag
+LIST of 1 items:
+[0] = 
+  ["value"] = "change name tag"
+ShipEffectsCollisions
+LIST of 0 items:
+
+HardDrive
+LIST of 0 items:
+
+TweakScale
+LIST of 0 items:
+
