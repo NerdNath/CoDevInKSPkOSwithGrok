@@ -3,6 +3,9 @@
 //apoapsis, and then terminate. It is intended for suborbital flight and contains no
 //specific method for reaching a stable orbit
 
+//include the needed library scripts for the visual studio code extension
+// #include "0:/utilsLibrary/vertLaunchUtils.lib.ks"
+
 clearscreen.
 //include the needed library scripts
 if not(core:VOLUME:FILES:HASKEY("library")) {
