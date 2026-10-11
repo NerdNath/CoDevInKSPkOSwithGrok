@@ -48,6 +48,18 @@ function testcode3 {
     planPolarTMI(100000).
 }
 
+function testcode4 {
+    set target to Mun.
+    local shipPos is ship:position - Kerbin:position.
+    local munPos is Mun:position - Kerbin:position.
+    local shipNorm is vcrs(shipPos, ship:velocity:orbit).
+    local munNorm is vcrs(munPos, Mun:velocity:orbit).
+    print "Ship normal: " + shipNorm.
+    print "Mun normal:  " + munNorm.
+    print "Angle between normals: " + vang(shipNorm, munNorm).
+}
+
 // testcode1().
 // testcode2().
-testcode3().
+// testcode3().
+testcode4().

@@ -367,7 +367,7 @@ function munTransferScore {
 }
 
 //makes a maneuver that will put the current vessel on a trajectory to
-//fly by the mun with a 35km closest approach. Intended to be run when in
+//fly by the mun with a 60km closest approach. Intended to be run when in
 //an orbit around Kerbin
 function planTMI {
   parameter desiredApproachDistance is 60000.
@@ -425,6 +425,8 @@ function frtScore {
   removeManeuverFromFlightPlan(mnv).
   return result.
 }
+
+//plans a trans-munar-injection maneuver that will be a free return trajectory
 
 function planMunFRT {
   parameter tgtMunPeri is 35000, tgtKerbinPeri is 32000.
@@ -633,4 +635,10 @@ function planPolarTMI {
 
     local mnv is node(bestTime, burnVector[2], burnVector[1], burnVector[0]).
     addManeuverToFlightPlan(mnv).
+}
+
+function planPolTMI {
+  parameter targetMunPe is 60000.
+
+  set target to Mun.
 }

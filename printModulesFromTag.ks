@@ -3,6 +3,9 @@
 //before running the script. If more than one part have that tag, this script will 
 //only work on the first one in the part tree that it hits.
 
+//include the needed library scripts for the visual studio code extension
+// #include "0:/utilsLibrary/vesPtMgmntUtils.lib.ks"
+
 //include the needed library scripts
 if not(core:VOLUME:FILES:HASKEY("library")) {
     createdir("library").
